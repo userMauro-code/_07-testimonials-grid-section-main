@@ -45,6 +45,10 @@ html, body {
     padding: 2rem;
 }
 
+.testimonial__quote {
+    display: none; 
+}
+
 .testimonial > .testimonial__header {
     display: flex;
     flex-direction: row;
@@ -164,11 +168,19 @@ html, body {
         width: 100%;
     }
 
-    
-
     .testimonial--zero {
         grid-column: 1/3;
         grid-row: 1/2;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .testimonial__quote {
+        display: block; 
+        position: absolute;
+        top: .5rem;
+        right: 5rem;
+        z-index: 20;
     }
 
     .testimonial--one {

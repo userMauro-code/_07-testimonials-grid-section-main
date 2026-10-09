@@ -155,13 +155,15 @@ html, body {
 
     .main {
         display: grid;
+        padding: 0;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        padding: 3em 0;
-        gap: 2rem;
+        
         max-width: 1320px;
         width: 100%;
     }
+
+    
 
     .testimonial--zero {
         grid-column: 1/3;
